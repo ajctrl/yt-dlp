@@ -82,7 +82,7 @@ def version_to_list(version):
 
 def dependency_options():
     # Due to the current implementation, these are auto-detected, but explicitly add them just in case
-    dependencies = [pycryptodome_module(), 'mutagen', 'brotli', 'certifi', 'websockets']
+    dependencies = [pycryptodome_module(), 'mutagen', 'brotli', 'certifi', 'websockets', 'glob']
     excluded_modules = ['test', 'ytdlp_plugins', 'youtube_dl', 'youtube_dlc']
 
     yield from (f'--hidden-import={module}' for module in dependencies)
