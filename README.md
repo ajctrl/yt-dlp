@@ -300,6 +300,7 @@ To build the Windows executable, you must have pyinstaller (and any of yt-dlp's 
     py devscripts/make_lazy_extractors.py
     py pyinst.py
 
+MUST COPY ytdlp_plugins FOLDER TO THE SAME FOLDER AS YT-DLP.EXE, RUN WITH --use-postprocessor FixupMtime:mtime_key=upload_date
 Note that pyinstaller [does not support](https://github.com/pyinstaller/pyinstaller#requirements-and-tested-platforms) Python installed from the Windows store without using a virtual environment
 
 **For Unix**:
